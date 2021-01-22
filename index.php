@@ -35,12 +35,13 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 		</tr>
 	</table>
 </header>
-<main class="contenu">
 	<div class="tab">
-		<button class="tablinks" onclick="openOnglet('Onglet1')">Onglet 1</button>
-		<button class="tablinks" onclick="openOnglet('Onglet2')">Onglet 2</button>
-		<button class="tablinks" onclick="openOnglet('Onglet3')">Onglet 3</button>
+		<button id="bt_onglet1" class="tablinks" onclick="openOnglet(event,'Onglet1')">Onglet 1</button>
+		<button id="bt_onglet2" class="tablinks" onclick="openOnglet(event,'Onglet2')">Onglet 2</button>
+		<button id="bt_onglet3" class="tablinks" onclick="openOnglet(event,'Onglet3')">Onglet 3</button>
 	</div>
+<main class="contenu">
+
 <!--Contenu des onglets -->
 	<div id="Onglet1" class="tabcontent">
 		<h3>Onglet 1</h3>
@@ -62,8 +63,9 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 </div>
 </body>
 <script>
-openOnglet("Onglet1");
-function openOnglet(nomOnglet) {
+document.getElementById("bt_onglet1").click();
+//openOnglet(null,"Onglet1");
+function openOnglet(evt, nomOnglet) {
   // Declarer les variables
   var i, tabcontent, tablinks;
   // Get all elements with class="tabcontent" and hide them
@@ -81,6 +83,7 @@ function openOnglet(nomOnglet) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(nomOnglet).style.display = "block";
   evt.currentTarget.className += " active";
+  
 }
 </script>
 </html>
