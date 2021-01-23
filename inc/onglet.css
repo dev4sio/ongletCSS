@@ -9,9 +9,9 @@ h1{padding-left:5px}
 footer {position: relative;z-index: +1;height: 10px;width: 100%;text-align: center;font-size:10px;bottom: 0px;}
 /* Style the tab */
 .tab {overflow: hidden; border: none;padding: none;margin: none;display:flex;align-items: left;}
-.tabfill {flex-grow: 1;background-color:rgba(0,128,255,.3);}
+.tabfill {flex-grow: 1;background-color:rgba(0,128,255,.26);}
 /* Style the buttons that are used to open the tab content */
-.tab button {background-color:rgba(0,128,255,.5);color:navy;float: left;border: none;outline:none;cursor: pointer;padding: 14px 16px;transition: 0.3s;}
+.tab button {background-color:rgba(0,128,255,.27);color:navy;float: left;border: none;border-right: 1px solid navy;outline:none;cursor: pointer;padding: 14px 16px;transition: 0.3s;}
 /* Create an active/current tablink class */
 .tab button.active {background:rgba(255,255,255,.0);}
 /* Change background color of buttons on hover */
