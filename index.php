@@ -30,7 +30,7 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 		<tr>
 			<td style="padding-bottom: 0px;"><img src="img/btslcn100.gif" alt="LCN"></td>
 			<td>
-				<h1>Onglets en HTML CSS JS</h1>
+				<h1>&nbsp;Onglets en HTML CSS JS</h1>
 			</td>
 		</tr>
 	</table>
