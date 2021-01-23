@@ -39,6 +39,8 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 		<button id="bt_onglet1" class="tablinks" onclick="openOnglet(event,'Onglet1')">Onglet 1</button>
 		<button id="bt_onglet2" class="tablinks" onclick="openOnglet(event,'Onglet2')">Onglet 2</button>
 		<button id="bt_onglet3" class="tablinks" onclick="openOnglet(event,'Onglet3')">Onglet 3</button>
+		<button id="bt_onglet4" class="tablinks" onclick="openOnglet(event,'Onglet4')">Onglet4</button>
+		<div class="tabfill">&nbsp;</div>
 	</div>
 <main class="contenu">
 
@@ -47,16 +49,25 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 		<h3>Onglet 1</h3>
 		<p>... Contenu de l'onglet 1...</p>
 		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">ONE : Exemple du W3C</a>
+		<p>... bla ...<br>... bla ...<br>... bla ...<br>... bla ...<br>...</p>
 	</div>
 	<div id="Onglet2" class="tabcontent">
 		<h3>Onglet 2</h3>
 		<p>... Contenu de l'onglet 2...</p>
 		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">TWO : Exemple du W3C</a>
+		<p>... bla ...<br>... bla ...<br>... bla ...<br>... bla ...<br>...</p>
 	</div>
 	<div id="Onglet3" class="tabcontent">
 		<h3>Onglet 3</h3>
 		<p>... Contenu de l'onglet 3...</p>
 		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">TREE : Exemple du W3C</a>
+		<p>... bla ...<br>... bla ...<br>... bla ...<br>... bla ...<br>...</p>
+	</div>
+	<div id="Onglet4" class="tabcontent">
+		<h3>Onglet 4</h3>
+		<p>... Contenu de l'onglet 4...</p>
+		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">FOUR : Exemple du W3C</a>
+		<p>... bla ...<br>... bla ...<br>... bla ...<br>... bla ...<br>...</p>
 	</div>
 </main>
 <?PHP include "./inc/zz_copy.php"; ?>
@@ -73,13 +84,11 @@ function openOnglet(evt, nomOnglet) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
   // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(nomOnglet).style.display = "block";
   evt.currentTarget.className += " active";
