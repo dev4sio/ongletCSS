@@ -1,5 +1,5 @@
 # ongletCSS
-Des onglets avec HTML, CSS et Jvascript 
+Des onglets avec HTML, CSS et Javascript 
 
 <img src="./img/ongletCSS.jpg" alt="Ecran de l'exemple"/>
 
