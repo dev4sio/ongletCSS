@@ -1,7 +1,7 @@
 # ongletCSS
 Des onglets avec HTML, CSS et Jvascript 
 
-<img src="./img/ongletCSS.jpg" alt="Ecran de l'exemple"/>
+<img src="./img/ongletIHM.jpg" alt="Ecran de l'exemple"/>
 
 ## C'est déja mieux comme ça
 
