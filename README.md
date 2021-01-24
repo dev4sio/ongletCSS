@@ -1,5 +1,7 @@
 # ongletCSS
-Des onglets avec HTML, CSS et Javascript 
+Des onglets avec HTML, CSS et Javascript
+
+**Voir exemple de W3Shools.com** https://www.w3schools.com/howto/howto_js_tabs.asp
 
 <img src="./img/ongletCSS.jpg" alt="Ecran de l'exemple"/>
 
