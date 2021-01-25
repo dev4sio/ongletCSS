@@ -60,7 +60,7 @@ if($_SERVER["HTTP_HOST"] != "localhost" && (!isset($_SERVER["HTTPS"]) || $_SERVE
 	<div id="Onglet3" class="tabcontent">
 		<h3>Onglet 3</h3>
 		<p>... Contenu de l'onglet 3...</p>
-		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">TREE : Exemple du W3C</a>
+		<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_close">THREE : Exemple du W3C</a>
 		<p>... bla ...<br>... bla ...<br>... bla ...<br>... bla ...<br>...</p>
 	</div>
 	<div id="Onglet4" class="tabcontent">
